@@ -77,6 +77,14 @@ var ElementStacks = new Class({
                     top: el.retrieve('default:coords').y + rand,
                     left: el.retrieve('default:coords').x + rand
                 });
+                
+                if (mode === 'in'){
+                    el.setStyle('z-index', 100);
+                } else {
+                    (function(){
+                        els.setStyle('z-index', 10);
+                    }).delay(that.options.delay * (els.length * 2));
+                }
             }).delay(that.options.delay * i, stackItem);
         });
     },
@@ -101,5 +109,3 @@ var ElementStacks = new Class({
         });
     }
 });
-
-// new ElementStacks($$('img'), $('wrapper'));

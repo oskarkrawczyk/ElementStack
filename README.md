@@ -17,7 +17,7 @@ Options
 
 All options have default values assigned, hence are optional.
 
-### Version 1.0
+### Version 1.0 & 1.1
 
 * **rotationDeg**: (int) degree of the rotation when elements are in a stack. 
 * **delay**: (int) delay between when each element starts its transition. 
