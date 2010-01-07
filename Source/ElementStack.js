@@ -20,6 +20,7 @@ provides: [ElementStacks]
 */
 
 var ElementStacks = new Class({
+	
     Implements: [Options],
     
     options: {
